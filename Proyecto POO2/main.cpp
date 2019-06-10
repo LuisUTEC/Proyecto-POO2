@@ -13,6 +13,8 @@ int main()
     int ini_y = 25;
     int space = 5;
     int circulo = 50;
+    int Tablero[11][11];
+
     sf::RenderWindow window(sf::VideoMode(1000, 650), "Ludo");
 
 // ======================= CASILLAS CASA ================================
@@ -113,6 +115,7 @@ int main()
     Casa_4_azul.setPosition(ini_x + circulo*9 + space,ini_y + circulo*9 + space);
 
 // ======================= CASILLAS CAMINO ================================
+//parte izquierda
     sf::CircleShape Recorrido1_1(20.f);
     Recorrido1_1.setFillColor(sf::Color(255, 255, 255));
     Recorrido1_1.setOutlineThickness(5.f);
@@ -153,32 +156,28 @@ int main()
     Recorrido1_7.setFillColor(sf::Color(255, 255, 255));
     Recorrido1_7.setOutlineThickness(5.f);
     Recorrido1_7.setOutlineColor(sf::Color(0, 0, 0));
-    Recorrido1_7.setPosition(space,ini_y + circulo*6 + space);
+    Recorrido1_7.setPosition(circulo*1 + space,ini_y + circulo*6 + space);
 
     sf::CircleShape Recorrido1_8(20.f);
     Recorrido1_8.setFillColor(sf::Color(255, 255, 255));
     Recorrido1_8.setOutlineThickness(5.f);
     Recorrido1_8.setOutlineColor(sf::Color(0, 0, 0));
-    Recorrido1_8.setPosition(circulo*1 + space,ini_y + circulo*6 + space);
+    Recorrido1_8.setPosition(circulo*2 + space,ini_y + circulo*6 + space);
+
 
     sf::CircleShape Recorrido1_9(20.f);
     Recorrido1_9.setFillColor(sf::Color(255, 255, 255));
     Recorrido1_9.setOutlineThickness(5.f);
     Recorrido1_9.setOutlineColor(sf::Color(0, 0, 0));
-    Recorrido1_9.setPosition(circulo*2 + space,ini_y + circulo*6 + space);
+    Recorrido1_9.setPosition(circulo*3 + space,ini_y + circulo*6 + space);
 
     sf::CircleShape Recorrido1_10(20.f);
     Recorrido1_10.setFillColor(sf::Color(255, 255, 255));
     Recorrido1_10.setOutlineThickness(5.f);
     Recorrido1_10.setOutlineColor(sf::Color(0, 0, 0));
-    Recorrido1_10.setPosition(circulo*3 + space,ini_y + circulo*6 + space);
+    Recorrido1_10.setPosition(circulo*4 + space,ini_y + circulo*6 + space);
 
-    sf::CircleShape Recorrido1_11(20.f);
-    Recorrido1_11.setFillColor(sf::Color(255, 255, 255));
-    Recorrido1_11.setOutlineThickness(5.f);
-    Recorrido1_11.setOutlineColor(sf::Color(0, 0, 0));
-    Recorrido1_11.setPosition(circulo*4 + space,ini_y + circulo*6 + space);
-// parte 2
+// parte derecha
     sf::CircleShape Recorrido2_1(20.f);
     Recorrido2_1.setFillColor(sf::Color(255, 255, 255));
     Recorrido2_1.setOutlineThickness(5.f);
@@ -286,8 +285,7 @@ int main()
     Recorrido3_8.setOutlineThickness(5.f);
     Recorrido3_8.setOutlineColor(sf::Color(0, 0, 0));
     Recorrido3_8.setPosition(circulo*6 + space,ini_y + circulo*3 + space);
-
-    // parte abajo
+// parte abajo
     sf::CircleShape Recorrido4_1(20.f);
     Recorrido4_1.setFillColor(sf::Color(255, 255, 255));
     Recorrido4_1.setOutlineThickness(5.f);
@@ -335,7 +333,7 @@ int main()
     Recorrido4_8.setOutlineThickness(5.f);
     Recorrido4_8.setOutlineColor(sf::Color(0, 0, 0));
     Recorrido4_8.setPosition(circulo*6 + space,ini_y + circulo*8 + space);
-//Casillas Inicio
+//============================ CASILLAS INICIO ==============================
     sf::CircleShape Inicio_amarillo(20.f);
     Inicio_amarillo.setFillColor(sf::Color(231, 235, 1));
     Inicio_amarillo.setOutlineThickness(5.f);
@@ -360,7 +358,7 @@ int main()
     Inicio_azul.setOutlineColor(sf::Color(0, 0, 0));
     Inicio_azul.setPosition(circulo*10 + space,ini_y + circulo*6 + space);
 
-//Casillas seguras
+//===================== CASILLAS SEGURAS ===================================
     sf::CircleShape SeguroAmarillo_1(20.f);
     SeguroAmarillo_1.setFillColor(sf::Color(231, 235, 1));
     SeguroAmarillo_1.setOutlineThickness(5.f);
@@ -433,7 +431,7 @@ int main()
     SeguroVerde_3.setOutlineColor(sf::Color(0, 0, 0));
     SeguroVerde_3.setPosition(circulo*5 + space,ini_y + circulo*7 + space);
 
-//Destinos finales
+//================================ DESTINOS FINALES =====================================
     sf::CircleShape DestinoFinal_Amarillo(20.f);
     DestinoFinal_Amarillo.setFillColor(sf::Color(231, 235, 1));
     DestinoFinal_Amarillo.setOutlineThickness(5.f);
@@ -495,7 +493,6 @@ int main()
         window.draw(Recorrido1_8);
         window.draw(Recorrido1_9);
         window.draw(Recorrido1_10);
-        window.draw(Recorrido1_11);
         window.draw(Recorrido2_1);
         window.draw(Recorrido2_2);
         window.draw(Recorrido2_3);
@@ -542,16 +539,6 @@ int main()
         window.draw(DestinoFinal_Azul);
         window.draw(DestinoFinal_Rojo);
         window.draw(DestinoFinal_Verde);
-
-
-
-
-
-
-
-
-
-
 
         window.display();
     }
