@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <SFML/Graphics.hpp>
+/*
 #include "Jugador.cpp"
 #include "Juego.cpp"
 #include "Ficha.cpp"
@@ -10,7 +11,7 @@
 #include "Tablero.cpp"
 #include "Recorrido.cpp"
 #include "Casilla.cpp"
-
+*/
 
 using namespace std;
 
