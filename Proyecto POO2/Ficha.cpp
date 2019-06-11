@@ -1,13 +1,16 @@
 #include <iostream>
+#include "Casilla.cpp"
 using namespace std;
 
-class ficha(){
-    protected:
-    char estado;
-    // Estados : c=CASA j= En Juego s= Zona segura f=Destino final
+class Ficha{
+private:
+char estado;
+// Estados : c=CASA j= En Juego s= Zona segura f=Destino final
 
 public:
 
-    void moverCasilla ( //*casilla )
+void mover(Casilla *casilla ){
 
 }
+
+};

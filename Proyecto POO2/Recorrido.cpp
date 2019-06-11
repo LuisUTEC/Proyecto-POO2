@@ -1,10 +1,11 @@
 #include <iostream>
+#include "Casilla.cpp"
 using namespace std;
 
 class Recorrido{
 
 public:
-    void calcularMovimiento( int movimiento, casilla ){
-        *casilla
+    Casilla* calcularMovimiento(Casilla* casilla, int movimientos){
+        return casilla;
     }
 };

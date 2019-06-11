@@ -1,17 +1,17 @@
 #include <iostream>
- using namespace std;
+using namespace std;
 
 class Juego{
-protected:
-    int turno,numeroJugadores
+private:
+    int turno;
+    int numeroJugadores;
 
 public:
+    void iniciarJuego(){}
 
-        void iniciarJuego(){}
+    void siguienteTurno(){}
 
-        void siguienteTurno(){}
-
-        void adiciionarJugaor( string nombre , int color){}
+    void adiciionarJugaor( string nombre , int color){}
 
     void validarFinJuego(){}
 
