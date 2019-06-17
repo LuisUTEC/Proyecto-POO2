@@ -11,7 +11,7 @@ public:
 
     void siguienteTurno(){}
 
-    void adiciionarJugaor( string nombre , int color){}
+    void adiciionarJugador( string nombre , int color){}
 
     void validarFinJuego(){}
 

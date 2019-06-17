@@ -6,6 +6,46 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Casilla.cpp
+SFML/Graphics.hpp
+-
+
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Dado.cpp
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Ficha.cpp
+iostream
+-
+Casilla.cpp
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Casilla.cpp
+
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Juego.cpp
+iostream
+-
+
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Jugador.cpp
+iostream
+-
+Ficha.cpp
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Ficha.cpp
+
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Recorrido.cpp
+iostream
+-
+Casilla.cpp
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Casilla.cpp
+
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Tablero.cpp
+iostream
+-
+Casilla.cpp
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Casilla.cpp
+
 C:/Users/LCorderoP/Desktop/Proyecto POO2/main.cpp
 iostream
 -
@@ -17,6 +57,20 @@ time.h
 -
 SFML/Graphics.hpp
 -
+Jugador.cpp
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Jugador.cpp
+Juego.cpp
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Juego.cpp
+Ficha.cpp
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Ficha.cpp
+Dado.cpp
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Dado.cpp
+Tablero.cpp
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Tablero.cpp
+Recorrido.cpp
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Recorrido.cpp
+Casilla.cpp
+C:/Users/LCorderoP/Desktop/Proyecto POO2/Casilla.cpp
 
 D:/SFML-2.5.1/include/SFML/Config.hpp
 TargetConditionals.h

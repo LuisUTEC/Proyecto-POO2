@@ -7,17 +7,34 @@ class Casilla{
 protected:
     int x;
     int y;
-    bool disponible;
-    int color;
+    bool disponible; //1 = disponible, 0 = no disponible
+    int color; //0 = amarillo, 1 = rojo, 2 = verde, 3 = azul
 public:
     Casilla(int pos_x, int pos_y){
-
         x = pos_x;
         y = pos_y;
     }
     virtual CircleShape mostrarEstadoCasilla(){
         CircleShape Cas(20.f);
         Cas.setOutlineThickness(5.f);
+        switch (color){
+            case 0: //amarillo
+                Cas.setFillColor(sf::Color(231, 235, 1));
+                Cas.setOutlineColor(sf::Color(0, 0, 0));
+                break;
+            case 1: //rojo
+                Cas.setFillColor(sf::Color(252, 0, 0));
+                Cas.setOutlineColor(sf::Color(0, 0, 0));
+                break;
+            case 2: //verde
+                Cas.setFillColor(sf::Color(0, 252, 0));
+                Cas.setOutlineColor(sf::Color(0, 0, 0));
+                break;
+            case 3: //azul
+                Cas.setFillColor(sf::Color(0, 0, 252));
+                Cas.setOutlineColor(sf::Color(0, 0, 0));
+                break;
+        }
         return Cas;
     }
     int getX() const {
@@ -60,31 +77,13 @@ class CasillaCasa:public Casilla{
 public:
 
     CircleShape mostrarEstadoCasilla() override {
-        switch (color){
-            case 0: //amarillo
-                Casilla::mostrarEstadoCasilla().setFillColor(sf::Color(231, 235, 1));
-                Casilla::mostrarEstadoCasilla().setOutlineColor(sf::Color(231, 235, 1));
-                break;
-            case 1: //rojo
-                Casilla::mostrarEstadoCasilla().setFillColor(sf::Color(252, 0, 0));
-                Casilla::mostrarEstadoCasilla().setOutlineColor(sf::Color(252, 0, 0));
-                break;
-            case 2: //verde
-                Casilla::mostrarEstadoCasilla().setFillColor(sf::Color(0, 252, 0));
-                Casilla::mostrarEstadoCasilla().setOutlineColor(sf::Color(0, 252, 0));
-                break;
-            case 3: //azul
-                Casilla::mostrarEstadoCasilla().setFillColor(sf::Color(0, 0, 252));
-                Casilla::mostrarEstadoCasilla().setOutlineColor(sf::Color(0, 0, 252));
-                break;
-        }
+
     }
 };
 
 class CasillaInicio:public Casilla{
 public:
     CircleShape mostrarEstadoCasilla() override {
-        Casilla::mostrarEstadoCasilla();
 
     }
 };
@@ -92,14 +91,12 @@ public:
 class CasillaRecorrido:public Casilla{
 public:
     CircleShape mostrarEstadoCasilla() override {
-        Casilla::mostrarEstadoCasilla();
-
+        Casilla::mostrarEstadoCasilla().setFillColor(sf::Color(255, 255, 255));
     }
 };
 class CasillaZonaSegura:public Casilla{
 public:
     CircleShape mostrarEstadoCasilla() override {
-        Casilla::mostrarEstadoCasilla();
 
     }
 };
@@ -107,7 +104,6 @@ public:
 class CasillaDestinoFinal:public Casilla{
 public:
     CircleShape mostrarEstadoCasilla() override {
-        Casilla::mostrarEstadoCasilla();
 
     }
 };

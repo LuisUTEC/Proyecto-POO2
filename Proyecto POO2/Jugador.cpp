@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Ficha.cpp"
+#include "Recorrido.cpp"
+#include "Dado.cpp"
 using namespace std;
 
 class Jugador{
@@ -12,11 +14,11 @@ public:
     }
 
     Ficha* seleccionarFichaEnJuego(){
-        
+
     }
 
     void jugar(Ficha *ficha, int movimientos){
-        ficha->mover();
+
     }
 
     ~Jugador(){}
