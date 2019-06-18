@@ -1,4 +1,6 @@
 #include <iostream>
+#include "Ficha.cpp"
+#include "Jugador.cpp"
 using namespace std;
 
 class Juego{
@@ -7,7 +9,9 @@ private:
     int numeroJugadores;
 
 public:
-    void iniciarJuego(){}
+    void iniciarJuego(){
+
+    }
 
     void siguienteTurno(){}
 
