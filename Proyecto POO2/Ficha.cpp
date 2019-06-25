@@ -11,7 +11,6 @@ Casilla* posicion;
 public:
     Ficha(){
         setEstado('c');
-
     }
 
     void mover(Casilla *casilla ){
