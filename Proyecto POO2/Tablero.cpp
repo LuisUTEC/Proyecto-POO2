@@ -161,7 +161,6 @@ public:
         mesa[6][0] = Inicio_Rojo;
         mesa[4][10] = Inicio_Verde;
         mesa[10][6] = Inicio_Azul;
-
     }
 
     void mostrar(){
@@ -182,5 +181,9 @@ public:
             }
             window.display();
         }
+    }
+
+    Casilla* getMesa(int x, int y){
+        return mesa[x][y];
     }
 };

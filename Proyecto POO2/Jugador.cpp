@@ -12,10 +12,10 @@ public:
     Jugador(string _nombre, int _color){
         nombre = _nombre;
         color = _color;
-        Ficha* ficha_1 = new Ficha();
-        Ficha* ficha_2 = new Ficha();
-        Ficha* ficha_3 = new Ficha();
-        Ficha* ficha_4 = new Ficha();
+        Ficha* ficha_1 = new Ficha(1);
+        Ficha* ficha_2 = new Ficha(2);
+        Ficha* ficha_3 = new Ficha(3);
+        Ficha* ficha_4 = new Ficha(4);
     }
 
     Ficha* seleccionarFichaEnJuego(){
