@@ -11,12 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef951e47-3c01-44fe-863c-88ce22e85ea5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ficha.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Ficha.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jugador.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Jugador.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tablero.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tablero.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="ef951e47-3c01-44fe-863c-88ce22e85ea5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +56,7 @@
     <session id="-67182014">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -280,12 +276,12 @@
       <workItem from="1560291292444" duration="7661000" />
       <workItem from="1560386318291" duration="6864000" />
       <workItem from="1560721130799" duration="1195000" />
-      <workItem from="1561221443586" duration="15036000" />
+      <workItem from="1561221443586" duration="15251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35061000" />
+    <option name="totallyTimeSpent" value="35276000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
