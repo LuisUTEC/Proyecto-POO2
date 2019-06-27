@@ -14,7 +14,6 @@ public:
     Ficha(int i){
         setEstado('c');
         setPosicion(tablero->getMesa(i,i));
-
     }
 
     void mover(Casilla *casilla ){
