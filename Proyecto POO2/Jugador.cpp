@@ -2,6 +2,8 @@
 #include "Ficha.cpp"
 #include "Recorrido.cpp"
 #include "Dado.cpp"
+#include "Juego.cpp"
+
 using namespace std;
 
 class Jugador{
@@ -25,9 +27,20 @@ public:
 
     Ficha seleccionarFichaEnJuego(int ficha){
         return fichas[ficha];
+
+
     }
 
     void jugar(Ficha *ficha, int movimientos){
+Ficha jugar;
+
+if(jugar.getEstado=='c'){
+    jugar.validarSalida();
+}
+else: {
+    jugar.CalcularMovimiento();
+
+}
 
     }
 
